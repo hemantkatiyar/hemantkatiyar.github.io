@@ -10,6 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
+        <script type="text/javascript">
+        <!--
+        var arxiv_authorid = "0000-0003-2176-6075";
+        //--></script>
+        <script type="text/javascript" src="https://arxiv.org/js/myarticles.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -30,7 +36,7 @@
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">Publications</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -59,16 +65,40 @@
 					<section id="top" class="one dark cover">
 						<div class="container">
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Hemant Katiyar</strong>, a Quantum engineer as well as software developer<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
-							</header>
+                            <div class="containerMain">
+                            <img alt="image" src="images/hk2.jpeg" style="width:100%;border-radius:1em;border: 9px solid #fff;">
+                            <div class="text-block">
+                                <h2 style="font-size:1.6em">Hemant    Katiyar</h2>
+                                <p style="font-size:0.7em;;line-height:120%;margin-bottom:10px">
+                                Quantum Engineer <br>
+                                Entangled Networks <br>
+                                Institute for Quantum Computing <br>
+                                University Of Waterloo
+                                </p>
+                            </div>
+                            </div>
 
+							<header style="float:right;width:65%">
+                                <h2 class="alt">
+                                    Hello!
+                                </h2>
+                                <!-- <h2 class="alt"> -->
+                                    <!-- Hi! I'm <strong>Hemant Katiyar</strong>, a Quantum engineer,<br /> -->
+                                    <!-- NMR/ESR experimentalist and software deverloper. -->
+                                <!-- </h2> -->
+
+                                <p> I am currently working for <a href="https://www.entanglednetworks.com" target="_blank" rel="noopener noreferrer">Entangled networks</a> and <a href="https://uwaterloo.ca/institute-for-quantum-computing/people-profiles/christopher-wilson" target="_blank" rel="noopener noreferrer">Prof. Christopher Wilson</a> developing long-range interactions in superconducting qubits. The position is funded jointly by Entangled networs and <a href="https://www.mitacs.ca/en/programs/accelerate" target="_blank" rel="noopener noreferrer">Mitacs </a> accelerate program.</p>
+                                 
+                                <p style="font-size:.8em;">I recieved my PhD in Physics-Quantum Information from <a href="https://uwaterloo.ca/institute-for-quantum-computing/" target="_blank" rel="noopener noreferrer">Institute for Quantum Computing</a>, University of Waterloo in October 2019 under the supervision of <a href="https://uwaterloo.ca/physics-astronomy/people-profiles/raymond-laflamme" target="_blank" rel="noopener noreferrer">Prof. Raymond Laflamme.</a> </p>
+
+							</header>
+                            
+                            <div style="clear:both;padding-top:20px;"> 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly" style="font-size:.7em;font-weight:bold">Curriculum Vitae</a>
+								<a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" class="button scrolly" style="font-size:.7em;font-weight:bold">Google Scholar Profile</a>
 							</footer>
+                            </div>
 
 						</div>
 					</section>
@@ -137,19 +167,112 @@
 				<!-- About Me -->
 					<section id="about" class="three">
 						<div class="container">
+                            <header>
+                                <h2>Publications</h2>
+                            </header>
+                            <ul class="publist">
+                                <li><span class="pubtitle">Experimental activation of strong local passive states with quantum information.</span>
+                                    <span class="pubauthor">Nayeli A. Rodríguez-Briones, <span class="pubhk">Hemant Katiyar</span>, Eduardo Martín-Martínez, Raymond Laflamme. </span>
+                                    <a href="https://arxiv.org/abs/2203.16269" target="_blank" rel="noopener noreferrer" class="publink"> arXiv:2203.16269 (2022) </a> 
+                                </li>
+                                <li>
+                                    <span class="pubtitle">Fast Simulation of Magnetic Field Gradients for Optimization of Pulse Sequences. </span>
+                                    <span class="pubauthor">John P. S. Peterson, <span class="pubhk"> Hemant Katiyar</span>, Raymond Laflamme. </span>
+                                    <a href="https://arxiv.org/abs/2006.10133" target="_blank" rel="noopener noreferrer" class="publink"> arXiv 2006.10133 (2020) </a>
+                                </li>
+                                <li>
+									<span class="pubtitle">Exploration of an augmented set of Leggett-Garg inequalities using a noninvasive continuous-in-time velocity measurement}.</span>
+									<span class="pubauthor">Shayan-Shawn Majidy,<span class="pubhk"> Hemant Katiyar</span>, Galit Anikeeva, Jonathan Halliwell, Raymond Laflamme.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.100.042325" target="_blank" rel="noopener noreferrer" class="publink" >Phys Rev A 100 042325 (2019)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Gradient-based closed-loop quantum optimal control in a solid-state two-qubit system. </span>
+									<span class="pubauthor">Guanru Feng, Franklin H Cho, <span class="pubhk"> Hemant Katiyar</span>, Jun Li, Dawei Lu, Jonathan Baugh, Raymond Laflamme.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.052341" target="_blank" rel="noopener noreferrer" class="publink" >Phys Rev A 98 052341 (2018)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Enhancing quantum control by bootstrapping a quantum processor of 12 qubits.</span>
+									<span class="pubauthor">Dawei Lu, Keren Li, Jun Li, <span class="pubhk"> Hemant Katiyar</span>, Annie Jihyun Park, Guanru
+									Feng, Tao Xin, Hang Li, Guilu Long, Aharon Brodutch, Jonathan Baugh, Bei Zeng,
+									Raymond Laflamme. </span>
+									<a href="https://www.nature.com/articles/s41534-017-0045-z" target="_blank" rel="noopener noreferrer" class="publink" >npj
+									Quantum Information volume 3, Article number: 45 (2017) </a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Experimentally superposing two pure states with partial prior knowledge. </span>
+									<span class="pubauthor">K Li, G Long, <span class="pubhk"> Hemant Katiyar</span>, T Xin, G Feng, D Lu, R Laflamme.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.022334" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+									Rev. A 95, 022334 (2017)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Experimental violation of the Leggett-Garg inequality in a 3-level system.</span>
+									<span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, A Brodutch, D Lu, R Laflamme.</span>
+									<a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa5c51/meta" target="_blank" rel="noopener noreferrer" class="publink" >New J 
+									Phys. 19 023033 (2017)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">NMR investigation of contextuality in a quantum harmonic oscillator via
+									pseudospin mapping.</span> <span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, CSS Kumar, TS Mahesh.</span> <a href="https://iopscience.iop.org/article/10.1209/0295-5075/113/20003"  target="_blank" rel="noopener noreferrer" class="publink">EPL
+									(Europhysics Letters) 113 (2), 20003 (2016) </a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">NMR quantum information processing.</span>
+									<span class="pubauthor">Dawei Lu, Aharon Brodutch, Annie Jihyun Park, <span class="pubhk"> Hemant Katiyar</span>, Tomas Jochym O’Connor, Raymond Laflamme.</span>
+									<a href="https://link.springer.com/chapter/10.1007/978-1-4939-3658-8_7" target="_blank" rel="noopener noreferrer" class="publink" >Electron
+									Spin Resonance(ESR) Based Quantum Computing, Biological Magnetic Resonance, vol
+									31, Springer, New York, NY (2016)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Ancilla assisted measurements on quantum ensembles: General protocols and applications in NMR quantum information processing.</span> 
+									<span class="pubauthor">TS Mahesh, A Shukla, SS Hegde, CS Kumar,<span class="pubhk"> Hemant Katiyar</span>, S Joshi, KR Rao.</span>
+									<a href="https://arxiv.org/abs/1509.04506" target="_blank" rel="noopener noreferrer" class="publink" >arXiv 1509.04506 (2015) </a>
+                                </li>
+                                <li>
+								<span class="pubtitle">Freezing a quantum magnet by repeated quantum interference: An experimental realization. </span>
+								<span class="pubauthor">Swathi Hegde, <span class="pubhk"> Hemant Katiyar</span>, Arnab Das and T S Mahesh.</span>
+								<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.90.174407" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+								Rev. B 90, 174407 (2014)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Estimating Franck-Condon factors using an NMR quantum processor. </span>
+									<span class="pubauthor">S Joshi, A Shukla, <span class="pubhk"> Hemant Katiyar</span>, A Hazra, TS Mahesh.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.90.022303" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+									Rev. A 90, 022303 (2014)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Violation of Entropic Leggett-Garg Inequality in Nuclear Spin Ensembles.</span>
+									<span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, Abhishek Shukla, Rama Koteswara Rao,and T S Mahesh.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.052102" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+									Rev. A 87, 052102  (2013)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Multipartite quantum correlations reveal frustration in a quantum Ising spin system. </span>
+									<span class="pubauthor">KRK Rao, <span class="pubhk"> Hemant Katiyar</span>, TS Mahesh, A Sen, U Sen, A Kumar.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.022312" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+									Rev. A 88, 022312  (2013)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Inversion of moments to retrieve joint probabilities in quantum sequential measurements. </span>
+									<span class="pubauthor">HS Karthik, <span class="pubhk"> Hemant Katiyar</span>, A Shukla, TS Mahesh, ARU Devi, AK Rajagopal.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.052118" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+									Rev. A 87, 052118  (2013)</a> 
+                                </li>
+                                <li>
+									<span class="pubtitle">Evolution of Quantum Discord and its Stability in Two-Qubit NMR Systems.</span>
+									<span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, Soumya Singha Roy, T S Mahesh and Apoorva Patel.</span>
+									<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.012309" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
+									Rev. A 86, 012309 (2012)</a> 
+                                </li>
+                            </ul>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+<!--  -->
+							<!-- <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus -->
+							<!-- ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae -->
+							<!-- laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem -->
+							<!-- parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper -->
+							<!-- dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec -->
+							<!-- ornare iaculis.</p> -->
 
 						</div>
 					</section>
