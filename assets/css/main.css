@@ -93,7 +93,7 @@ input, select, textarea {
     .text-block {
         width:100%;
         position: absolute;
-        bottom: 12px;
+        /* bottom: 0px; */
         /* right: 0px; */
         /* background-color: black; */
         color: white;
@@ -102,10 +102,11 @@ input, select, textarea {
         text-align:left;
         align-items:center; 
         background: rgba(0, 0, 0, 0.7);
-        border-width: 0px 3px 3px 3px;
-        border-style:solid;
-        border-color:#fff;
-        border-radius:0 0 1em 1em;
+        border: 3px solid #fff;
+        /* border-width: 0px 3px 3px 3px; */
+        /* border-style:solid; */
+        /* border-color:#fff; */
+        border-radius: 1em;
         color: #a6dfeb;
     }
     
