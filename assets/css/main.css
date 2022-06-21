@@ -131,26 +131,24 @@ input, select, textarea {
     }
 
     ul.implink {
-        /* border: 2px solid white; */
+        background-color:#1e2023;
+        border-width: 4px 0 4px 0;
+        border-style: solid;
+        border-color: #39373d;
 		cursor: default;
 		list-style: none;
-        /* margin-right: 1.5em; */
-		/* padding-left: 0; */
+        padding:0.5em;
 	}
 	ul.implink li {
+        padding-left:0em;
         font-size: 0.7em;
         color: #078593;
-        font-weight: bold;
-        /* display: inline-block; */
-        /* padding-right: 0; */
+        font-weight: 400;
+        margin:0;
+        display: block;
 	}
-	ul.implink a {
-		/* display: inline-block; */
-		/* width: 20em; */
-		/* height: 2em; */
-		/* line-height: 2em; */
-		text-align: left;
-		border: 0;
+	ul.implink li a {
+		/* border: 2px solid white; */
 	}
 
 /* User Defined */
