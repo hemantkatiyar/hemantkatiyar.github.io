@@ -2026,7 +2026,8 @@ input, select, textarea {
 	button,
 	.button {
 		position: relative;
-        margin-left:1em;
+        margin-left:2em;
+        margin-top:1em;
 		display: inline-block;
 		border-radius: 0.95em;
         border: 1px solid #fff; /* Green */
