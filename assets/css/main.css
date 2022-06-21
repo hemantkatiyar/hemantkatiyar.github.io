@@ -78,7 +78,7 @@ input, select, textarea {
     .containerleft {
         position: relative;
         float: left;
-        width: 30%;
+        /* width: 30%; */
         /* background-color: black; */
     }
     .containerright {
@@ -93,20 +93,21 @@ input, select, textarea {
     .text-block {
         width:100%;
         position: absolute;
-        /* bottom: 0px; */
+        bottom: 12px;
         /* right: 0px; */
         /* background-color: black; */
-        color: white;
-        padding-left: 20px;
-        padding-right: 20px;
-        text-align:left;
-        align-items:center; 
+        /* color: white; */
+        padding: 25px;
+        /* padding-left: 20px; */
+        /* padding-right: 20px; */
+        /* text-align:left; */
+        /* align-items:center;  */
         background: rgba(0, 0, 0, 0.7);
-        border: 3px solid #fff;
-        /* border-width: 0px 3px 3px 3px; */
-        /* border-style:solid; */
-        /* border-color:#fff; */
-        border-radius: 1em;
+        /* border: 3px solid #fff; */
+        border-width: 0px 3px 3px 3px;
+        border-style:solid;
+        border-color:#fff;
+        border-radius: 0 0 1em 1em;
         color: #a6dfeb;
     }
     
