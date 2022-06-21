@@ -109,15 +109,40 @@ input, select, textarea {
         display: block;
     }
     .pubauthor {
-        /* line-height: 70%; */
         display: block;
         font-size: 0.7em;
     }
     .publink{
-        /* line-height: 200%; */
         display: block;
         font-size:0.65em;
     }
+    
+    .middle{
+        text-align: center;
+    }
+
+    ul.implink {
+        /* border: 2px solid white; */
+		cursor: default;
+		list-style: none;
+        /* margin-right: 1.5em; */
+		/* padding-left: 0; */
+	}
+	ul.implink li {
+        font-size: 0.7em;
+        color: #078593;
+        font-weight: bold;
+        /* display: inline-block; */
+        /* padding-right: 0; */
+	}
+	ul.implink a {
+		/* display: inline-block; */
+		/* width: 20em; */
+		/* height: 2em; */
+		/* line-height: 2em; */
+		text-align: left;
+		border: 0;
+	}
 
 /* User Defined */
 
@@ -2124,7 +2149,13 @@ input, select, textarea {
 			flex-shrink: 0;
 			padding: 1.5em 0 0.75em 0;
 		}
-
+        #header .middle {
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
+			-ms-flex-shrink: 0;
+			flex-shrink: 0;
+			padding: 1.5em 0 0.1em 0;
+		}
 			#header .bottom > :last-child {
 				margin-bottom: 0;
 			}
@@ -2499,6 +2530,13 @@ input, select, textarea {
 					position: relative;
 				}
 
+				#header .middle {
+					border-top: solid 1px rgba(255, 255, 255, 0.05);
+					box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
+					padding-top: 1em;
+					margin-top: 0.1em;
+					position: relative;
+				}
 				#header .bottom {
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.15);
