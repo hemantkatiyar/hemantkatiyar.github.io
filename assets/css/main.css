@@ -75,12 +75,19 @@ input, select, textarea {
 /* User Defined */
 
 /* Container holding the image and the text */
-    .containerMain {
+    .containerleft {
         position: relative;
         float: left;
         width: 30%;
         /* background-color: black; */
     }
+    .containerright {
+        position: relative;
+        float: right;
+        width: 60%;
+        /* background-color: black; */
+    }
+
 
 /* Bottom right text */
     .text-block {
@@ -95,7 +102,7 @@ input, select, textarea {
         text-align:left;
         align-items:center; 
         background: rgba(0, 0, 0, 0.7);
-        border-width: 0px 9px 9px 9px;
+        border-width: 0px 3px 3px 3px;
         border-style:solid;
         border-color:#fff;
         border-radius:0 0 1em 1em;
@@ -2334,11 +2341,13 @@ input, select, textarea {
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				/* background-color: #f5fafa; */
+				background-color: #ecf1f1;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #f5fafa;
+				/* background-color: #ecf1f1; */
 			}
 
 			#main > section.four {
