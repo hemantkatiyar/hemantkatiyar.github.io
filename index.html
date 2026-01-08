@@ -1,113 +1,125 @@
 <!DOCTYPE HTML>
-<!--
-    Prologue by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
     <head>
-        <title>Hemant Katiyar</title>
+        <title>Hemant Katiyar - Quantum Engineer</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        
+        <meta name="description" content="Portfolio of Hemant Katiyar, Senior Quantum Engineer at IonQ. PhD in Physics (Quantum Information) from University of Waterloo.">
+        
         <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- <script type="text/javascript" src="https://livejs.com/live.js"></script> -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYE0XXT727"></script> -->
-        <!-- <script> -->
-            <!-- window.dataLayer = window.dataLayer || []; -->
-            <!-- function gtag(){dataLayer.push(arguments);} -->
-            <!-- gtag('js', new Date()); -->
-<!--  -->
-            <!-- gtag('config', 'G-CYE0XXT727'); -->
-        <!-- </script> -->
-    </head>
+
+        <style>
+            .profile-card-image {
+                width: 100%;
+                border-radius: 1em;
+                border: 3px solid #fff;
+                box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59); 
+                -webkit-box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59); 
+                -moz-box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59);
+            }
+            .profile-text-header {
+                font-size: 1.6em;
+            }
+            .profile-subtext-list {
+                font-weight: 300;
+                font-size: 0.7em;
+                line-height: 120%;
+                margin-left: 0;
+                margin-bottom: 0;
+                list-style: none;
+                padding-left: 0;
+            }
+            .footer-last-mod {
+                font-size: 0.45em; 
+                text-align: center;
+                list-style: none; 
+                color: teal; 
+                padding-left: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+            .intro-text p {
+                font-size: 0.9em;
+            }
+            /* Make publications easier to scan */
+            .publink {
+                font-weight: bold;
+                color: #555;
+            }
+        </style>
+
+        </head>
 
     <body class="is-preload">
 
-        <!-- Header -->
         <div id="header">
 
             <div class="top">
 
-                <!-- Logo -->
                 <div id="logo">
-                    <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+                    <span class="image avatar48"><img src="images/avatar.jpg" alt="Hemant Katiyar Portrait" /></span>
                     <h1 id="title">Hemant Katiyar</h1>
                     <p>Quantum Engineer</p>
                 </div>
 
-                <!-- Nav -->
                 <nav id="nav">
                     <ul>
                         <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
                         <li><a href="#about" id="about-link"><span class="icon solid fa-list">Publications</span></a></li>
                         <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-sticky-note">Curriculum Vitae</span></a></li>
-                        <!-- <li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li> -->
                     </ul>
                 </nav>
 
             </div>
             <div class="middle">
                 <ul class="implink">
-                    <li><a href="/HemantKatiyarCV.pdf"  target="_blank" rel="noopener noreferrer" ><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Download CV (PDF)</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" ><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Google Scholar Profile</a></li>
-                    <li><a href="mailto:hemantkatiyar7@gmail.com?subject=HK@github&body=Dear Hemant," ><i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;hemantkatiyar7@gmail.com</a></li>
+                    <li><a href="/HemantKatiyarCV.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Download CV (PDF)</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Google Scholar Profile</a></li>
+                    <li><a href="mailto:hemantkatiyar7@gmail.com?subject=HK@github&body=Dear Hemant,"><i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;hemantkatiyar7@gmail.com</a></li>
                 </ul>
             </div>
 
             <div class="bottom">
-                <!-- Social Icons -->
                 <ul class="icons">
                     <li><a href="https://twitter.com/hem_katiyar/" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a href="https://www.facebook.com/hemant.katiyar" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
                     <li><a href="https://github.com/hemantkatiyar" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">Github</span></a></li>
                     <li><a href="https://www.linkedin.com/in/hemant-katiyar/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-                    <!-- <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li> -->
                 </ul>
             </div>
-            <div >
+            <div>
                 <ul style="margin-bottom:0;margin-left:0">
-                    <li style="font-size: 0.45em; text-align: center;list-style: none; color:teal; padding-left:0">Website Last Modified @ <span id="demo"></span></li>
+                    <li class="footer-last-mod">Website Last Modified @ <span id="demo"></span></li>
                 </ul>  
             </div>
 
         </div>
 
-        <!-- Main -->
         <div id="main">
 
-            <!-- Intro -->
             <section id="top" class="one dark cover">
                 <div class="container">
                     <header>
                         <div class="row">
                             <div class="col-4 col-12-mobile">
                                 <div style="position:relative">
-                                    <img alt="image" src="images/hk2.jpeg" style="width:100%;border-radius:1em;border: 3px solid #fff;box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59); -webkit-box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59); -moz-box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59);">
+                                    <img alt="Hemant Katiyar" src="images/hk2.jpeg" class="profile-card-image">
                                     <div class="text-block">
-                                        <h2 style="font-size:1.6em">&nbsp;Hemant Katiyar</h2>
-                                        <ul style="font-weight:300;font-size:0.7em;line-height:120%;margin-left:0;margin-bottom:0;list-style:none;padding-left:0">
+                                        <h2 class="profile-text-header">&nbsp;Hemant Katiyar</h2>
+                                        <ul class="profile-subtext-list">
                                             <li>Senior Engineer, IonQ</li>
-                                            <!-- <li>IonQ </li> -->
-                                            <!-- <li>Institute for Quantum Computing, </li> -->
-                                            <!-- <li>University Of Waterloo. </li> -->
                                         </ul>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-8 col-12-mobile">
-                                <h2 class="alt">
-                                    Hello!
-                                </h2>
-                                <!-- <h2 class="alt"> -->
-                                <!-- Hi! I'm <strong>Hemant Katiyar</strong>, a Quantum engineer,<br /> -->
-                                <!-- NMR/ESR experimentalist and software deverloper. -->
-                                <!-- </h2> -->
+                                <h2 class="alt">Hello!</h2>
+                                
+                                <p> I am currently working for <a href="https://www.ionq.com" target="_blank" rel="noopener noreferrer">IonQ</a> as a Senior Engineer.</p>
 
-                                <p> I am currently working for <a href="https://www.ionq.com" target="_blank" rel="noopener noreferrer">Ionq</a> as a senior engineer</p>
-
-                                <p style="font-size:.8em;">I recieved my PhD in Physics-Quantum Information from <a href="https://uwaterloo.ca/institute-for-quantum-computing/" target="_blank" rel="noopener noreferrer">Institute for Quantum Computing</a>, University of Waterloo in October 2019 under the supervision of <a href="https://uwaterloo.ca/physics-astronomy/people-profiles/raymond-laflamme" target="_blank" rel="noopener noreferrer">Prof. Raymond Laflamme.</a> </p>
+                                <p style="font-size:.9em;">I received my PhD in Physics-Quantum Information from the <a href="https://uwaterloo.ca/institute-for-quantum-computing/" target="_blank" rel="noopener noreferrer">Institute for Quantum Computing</a>, University of Waterloo in October 2019 under the supervision of <a href="https://uwaterloo.ca/physics-astronomy/people-profiles/raymond-laflamme" target="_blank" rel="noopener noreferrer">Prof. Raymond Laflamme.</a> </p>
                             </div>
                         </div>
                     </header>
@@ -116,7 +128,7 @@
                         <footer> 
                             <div class="row">
                                 <div class="col-4 col-12-mobile">
-                                    <a href="/HemantKatiyarCV.pdf"  target="_blank" rel="noopener noreferrer" class="button" style="font-size:.7em;font-weight:bold">Curriculum Vitae (PDF)</a>
+                                    <a href="/HemantKatiyarCV.pdf" target="_blank" rel="noopener noreferrer" class="button" style="font-size:.7em;font-weight:bold">Curriculum Vitae (PDF)</a>
                                 </div>
                                 <div class="col-4 col-12-mobile">
                                     <a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" class="button " style="font-size:.7em;font-weight:bold">Google Scholar Profile</a>
@@ -125,19 +137,19 @@
                                     <a href="mailto:hemantkatiyar7@gmail.com?subject=HK@github&body=Dear Hemant," class="button" style="font-size:.7em;font-weight:bold">Contact Me (email)</a>
                                 </div>
                             </div>
-
                         </footer>
                     </div>
 
                 </div>
             </section>
 
-            <!-- Portfolio -->
             <section id="about" class="two">
                 <div class="container">
                     <header>
-                        <h2>Publications</h2> <a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Google Scholar Profile</a>
+                        <h2>Publications</h2> 
+                        <a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Google Scholar Profile</a>
                     </header>
+                    
                     <ul>
                         <li><span class="pubtitle">Experimental activation of strong local passive states with quantum information.</span>
                             <span class="pubauthor">Nayeli A. Rodríguez-Briones, <span class="pubhk">Hemant Katiyar</span>, Eduardo Martín-Martínez, Raymond Laflamme. </span>
@@ -161,8 +173,7 @@
                         <li>
                             <span class="pubtitle">Enhancing quantum control by bootstrapping a quantum processor of 12 qubits.</span>
                             <span class="pubauthor">Dawei Lu, Keren Li, Jun Li, <span class="pubhk"> Hemant Katiyar</span>, Annie Jihyun Park, Guanru Feng, Tao Xin, Hang Li, Guilu Long, Aharon Brodutch, Jonathan Baugh, Bei Zeng, Raymond Laflamme. </span>
-                            <a href="https://www.nature.com/articles/s41534-017-0045-z" target="_blank" rel="noopener noreferrer" class="publink" >npj
-                                Quantum Information volume 3, Article number: 45 (2017) </a> 
+                            <a href="https://www.nature.com/articles/s41534-017-0045-z" target="_blank" rel="noopener noreferrer" class="publink" >npj Quantum Information 3, 45 (2017) </a> 
                         </li>
                         <li>
                             <span class="pubtitle">Experimentally superposing two pure states with partial prior knowledge. </span>
@@ -175,26 +186,24 @@
                             <a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa5c51/meta" target="_blank" rel="noopener noreferrer" class="publink" >New J Phys. 19 023033 (2017)</a> 
                         </li>
                         <li>
-                            <span class="pubtitle">NMR investigation of contextuality in a quantum harmonic oscillator via
-                                pseudospin mapping.</span> 
+                            <span class="pubtitle">NMR investigation of contextuality in a quantum harmonic oscillator via pseudospin mapping.</span> 
                             <span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, CSS Kumar, TS Mahesh.</span> 
-                            <a href="https://iopscience.iop.org/article/10.1209/0295-5075/113/20003"  target="_blank" rel="noopener noreferrer" class="publink">EPL (Europhysics Letters) 113 (2), 20003 (2016) </a> 
+                            <a href="https://iopscience.iop.org/article/10.1209/0295-5075/113/20003"  target="_blank" rel="noopener noreferrer" class="publink">EPL 113 (2), 20003 (2016) </a> 
                         </li>
                         <li>
                             <span class="pubtitle">NMR quantum information processing.</span>
                             <span class="pubauthor">Dawei Lu, Aharon Brodutch, Annie Jihyun Park, <span class="pubhk"> Hemant Katiyar</span>, Tomas Jochym O’Connor, Raymond Laflamme.</span>
-                            <a href="https://link.springer.com/chapter/10.1007/978-1-4939-3658-8_7" target="_blank" rel="noopener noreferrer" class="publink" >Electron Spin Resonance(ESR) Based Quantum Computing, Biological Magnetic Resonance, vol 31, Springer, New York, NY (2016)</a> 
+                            <a href="https://link.springer.com/chapter/10.1007/978-1-4939-3658-8_7" target="_blank" rel="noopener noreferrer" class="publink" >Electron Spin Resonance (ESR) Based Quantum Computing, Springer (2016)</a> 
                         </li>
                         <li>
-                            <span class="pubtitle">Ancilla assisted measurements on quantum ensembles: General protocols and applications in NMR quantum information processing.</span> 
+                            <span class="pubtitle">Ancilla assisted measurements on quantum ensembles: General protocols and applications.</span> 
                             <span class="pubauthor">TS Mahesh, A Shukla, SS Hegde, CS Kumar,<span class="pubhk"> Hemant Katiyar</span>, S Joshi, KR Rao.</span>
                             <a href="https://arxiv.org/abs/1509.04506" target="_blank" rel="noopener noreferrer" class="publink" >arXiv 1509.04506 (2015) </a>
                         </li>
                         <li>
                             <span class="pubtitle">Freezing a quantum magnet by repeated quantum interference: An experimental realization. </span>
                             <span class="pubauthor">Swathi Hegde, <span class="pubhk"> Hemant Katiyar</span>, Arnab Das and T S Mahesh.</span>
-                            <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.90.174407" target="_blank" rel="noopener noreferrer" class="publink" >Phys.
-                                Rev. B 90, 174407 (2014)</a> 
+                            <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.90.174407" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. B 90, 174407 (2014)</a> 
                         </li>
                         <li>
                             <span class="pubtitle">Estimating Franck-Condon factors using an NMR quantum processor. </span>
@@ -223,149 +232,112 @@
                         </li>
                     </ul>
 
-                    <!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
-                    <!--  -->
-                    <!-- <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus -->
-                    <!-- ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae -->
-                    <!-- laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem -->
-                    <!-- parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper -->
-                    <!-- dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec -->
-                    <!-- ornare iaculis.</p> -->
-
-                </div>										
+                </div>                                      
             </section>
 
-            <!-- About Me -->
             <section id="portfolio" class="three">
                 <div class="container">
                     <header>
                         <h2>Curriculum Vitae & Resume</h2>
-                        <a href="/HemantKatiyarCV.pdf"  target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Download CV PDF version</a>
-                        <a href="/resume_hk.pdf"  target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Download resume PDF version</a>
+                        <a href="/HemantKatiyarCV.pdf" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Download CV PDF version</a>
+                        <a href="/resume_hk.pdf" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Download resume PDF version</a>
                     </header>
                     <h3>Work</h3>
                     <ul>
                         <li>
-                            <span class="pubtitle">IonQ, Canada (Jan, 2023- Present) </span>
+                            <span class="pubtitle">IonQ, Canada (Jan 2023 - Present) </span>
                             <span class="pubauthor">Senior Engineer</span>
                         </li>
                         <li>
-                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo Ontario, Canada (Aug, 2022 – Dec, 2022). </span>
-                            <span class="pubauthor">Post-Doctoral Fellow (Mitacs Accelerate) &nbsp;&nbsp;| &nbsp;&nbsp;  Supervisor: Prof. Christopher Wilson</span>
+                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo (Aug 2022 – Dec 2022) </span>
+                            <span class="pubauthor">Post-Doctoral Fellow (Mitacs Accelerate) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. Christopher Wilson</span>
                         </li>
                         <li>
-                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo Ontario, Canada (Oct, 2019 – Aug, 2022). </span>
-                            <span class="pubauthor">Post-Doctoral Fellow &nbsp;&nbsp;| &nbsp;&nbsp;  Supervisor: Prof. Raymond Laflamme</span>
+                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo (Oct 2019 – Aug 2022) </span>
+                            <span class="pubauthor">Post-Doctoral Fellow &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. Raymond Laflamme</span>
                         </li>
                     </ul>
 
                     <h3>Education</h3>
                     <ul>
                         <li>
-                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo Ontario, Canada (2014–2019). </span>
-                            <span class="pubauthor">PhD-Physics (Quantum Information)  &nbsp;&nbsp;| &nbsp;&nbsp;   Supervisor: Prof. Raymond Laflamme </span>
-                            <span class="publink">Thesis title : Control techniques in spin based quantum computation.  </span>
+                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo (2014–2019) </span>
+                            <span class="pubauthor">PhD Physics (Quantum Information) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. Raymond Laflamme </span>
+                            <span class="publink">Thesis title: Control techniques in spin based quantum computation.</span>
                         </li> 
                         <li>
-                            <span class="pubtitle">Indian Institute of Science Education and Research Pune, India (2012-2014) </span>
+                            <span class="pubtitle">Indian Institute of Science Education and Research Pune, India (2012–2014) </span>
                             <span class="pubauthor">Research Assistant </span>
-
                         </li> 
                         <li>
-                            <span class="pubtitle">Indian Institute of Science Education and Research Pune, India (2007-2012) </span>
-                            <span class="pubauthor">Bachelors of Science-Masters of Science Dual Degree (Major in Physics) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. T. S. Mahesh </span>
-                            <span class="publink">Thesis title : Estimation of Quantum Correlations in Nuclear Spin Ensembles. </span>
+                            <span class="pubtitle">Indian Institute of Science Education and Research Pune, India (2007–2012) </span>
+                            <span class="pubauthor">BS-MS Dual Degree (Major in Physics) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. T. S. Mahesh </span>
+                            <span class="publink">Thesis title: Estimation of Quantum Correlations in Nuclear Spin Ensembles.</span>
                         </li>
                     </ul>
-                    <h3> Scholarships/Awards</h3>
+                    
+                    <h3>Scholarships / Awards</h3>
                     <ul>
-                        <li>Marie Curie Graduate Student Award (Spring 2014 - Winter 2018; 12 Terms)</li>
-                        <li>International Doctoral Student Award (Spring 2014 - Winter 2018; 12 Terms)</li>
-                        <li>Graduate Research Award (Spring 2014 - Spring 2019; 16 Terms)</li>
-                        <li>Science Graduate Experience Award (Fall 2014, Spring 2015, Fall 2015, Spring 2016, Spring 2017; 5 Terms)</li>
+                        <li>Marie Curie Graduate Student Award (Spring 2014 - Winter 2018)</li>
+                        <li>International Doctoral Student Award (Spring 2014 - Winter 2018)</li>
+                        <li>Graduate Research Award (Spring 2014 - Spring 2019)</li>
+                        <li>Science Graduate Experience Award (5 Terms between 2014-2017)</li>
                         <li>Innovation in Science Pursuit for Inspired Research (INSPIRE) scholarship (2007-2012)</li>
                     </ul>
-                    <h3>Technical skills</h3>
+                    
+                    <h3>Technical Skills</h3>
                     <ul>
-                        <li><span style="font-weight:bold">Programming Languages:</span> MATLAB, Mathematica, Python </li>
-                        <li><span style="font-weight:bold">Markup Languages:</span> CSS, HTML, LATEX </li>
-                        <li><span style="font-weight:bold">Operating Systems:</span> Linux, Windows, Mac OS </li>
-                        <li><span style="font-weight:bold">Tools:</span> Git, GitHub </li>
-                        <li><span style="font-weight:bold">Other Software:</span> Bruker TopSpin, Photoshop, Dreamweaver, Illustrator </li>
+                        <li><span style="font-weight:bold">Programming Languages:</span> Python, MATLAB, Mathematica</li>
+                        <li><span style="font-weight:bold">Markup Languages:</span> HTML, CSS, LaTeX</li>
+                        <li><span style="font-weight:bold">Operating Systems:</span> Linux, Windows, macOS</li>
+                        <li><span style="font-weight:bold">Tools:</span> Git, GitHub</li>
+                        <li><span style="font-weight:bold">Other Software:</span> Bruker TopSpin, Photoshop, Dreamweaver, Illustrator</li>
                     </ul>
+                    
                     <h3>Teaching Experience</h3>
                     <ul>
-                        <li>PHYS468-Introduction to the Implementation of Quantum Information Processing (2021),<span style="font-style:italic">  taught students how to use a NMR quantum computer and helped them perform their first quantum experiment (60Hrs).</span></li>
-                        <li> PHYS242-Electricity and Magnetism 1 (2021),<span style="font-style:italic"> Taught weeks 5 and 6.</span></li>
-                        <li> PHYS468-Introduction to the Implementation of Quantum Information Processing (2020),<span style="font-style:italic">  taught students how to use a NMR quantum computer and helped them perform their first quantum experiment (60Hrs).</span></li>
-                        <li> QIC750-Implementation of Quantum Information Processing (2019),<span style="font-style:italic"> teaching assistant along with giving NMR lab introduction to students.</span></li>
-                        <li> PHYS234-Quantum Physics 1 (2017),<span style="font-style:italic"> full time teaching assistant.</span></li>
-                        <li> PHYS280-Introduction to Biophysics (2017),<span style="font-style:italic"> full time teaching assistant.</span></li>
-                        <li>PHYS234-Quantum Physics 1 (2016),<span style="font-style:italic"> full time teaching assistant.</span></li>
-                        <li>PHYS121-Mechanics (2015),<span style="font-style:italic">  full time teaching assistant.</span></li>
-                        <li>PHYS364-Mathematical Physics 1 (2015),<span style="font-style:italic"> full time teaching assistant.</span></li>
-                        <li>PHYS121-Mechanics (2014),<span style="font-style:italic">  full time teaching assistant.</span></li>
+                        <li>PHYS468 - Introduction to the Implementation of Quantum Information Processing (2020, 2021) <br><span style="font-style:italic">Taught students how to use an NMR quantum computer and helped them perform their first quantum experiment (60 Hrs).</span></li>
+                        <li>PHYS242 - Electricity and Magnetism 1 (2021) <br><span style="font-style:italic">Taught weeks 5 and 6.</span></li>
+                        <li>QIC750 - Implementation of Quantum Information Processing (2019) <br><span style="font-style:italic">Teaching assistant; gave NMR lab introduction to students.</span></li>
+                        <li>PHYS234 - Quantum Physics 1 (2016, 2017) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
+                        <li>PHYS280 - Introduction to Biophysics (2017) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
+                        <li>PHYS121 - Mechanics (2014, 2015) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
+                        <li>PHYS364 - Mathematical Physics 1 (2015) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
                     </ul>
+                    
                     <h3>Scientific Outreach</h3>
                     <ul>
-                        <li>Undergraduate School on Experimental Quantum Information Processing (2015-2019),<span style="font-style:italic">  taught all the aspects of performing NMR experiments, helped students to be familiar with experimental setup, and engaged them in thinking about the physics behind the experiments.</span></li>
+                        <li>Undergraduate School on Experimental Quantum Information Processing (2015-2019)<br><span style="font-style:italic">Taught all aspects of performing NMR experiments, helped students familiarize with experimental setup, and engaged them in the physics behind the experiments.</span></li>
                     </ul>
+                    
                     <h3>Talks, Posters, Conferences, and Schools</h3>
                     <ul>
                         <li>2017: School & Conference, Machine Learning, University of KwaZulu-Natal, South Africa. </li>
                         <li>2016: School, Machine Learning, Perimeter Institute, Canada. </li>
                         <li>2015: Poster, University of Guelph, Canada. </li>
-                        <li>2013: Poster & Conference, Nuclear Magnetic Resonance Society meeting at Indian Institute of Technology, Bombay. </li>
-                        <li>2012: Poster & Conference, International Conference On Quantum Information and Quantum Computing at Indian Institute of Science, Bangalore. </li>
-                        <li>2012: School, Mini Winter School on Quantum Information and Computation. </li>
-                        <li>2012: Talk, On Quantum Discord in Summer School 2012 organized by Centre for Quantum Information and Quantum Computing(CQIQC), Indian Institute of Science, Bangalore. </li>
-                        <li>2012: School, Attended Summer School 2012 organized by CQIQC, Indian Institute of Science, Bangalore. </li>
-                        <li>2011: Conference, Attended International School on Quantum and Nano Computing Systems and Applications held at Dayalbagh Educational Institute, Agra, India. </li>
+                        <li>2013: Poster & Conference, NMR Society meeting at IIT Bombay. </li>
+                        <li>2012: Poster & Conference, Int. Conf. on Quantum Information and Quantum Computing at IISc Bangalore. </li>
+                        <li>2012: Mini Winter School on Quantum Information and Computation. </li>
+                        <li>2012: Talk, "On Quantum Discord", CQIQC Summer School, IISc Bangalore. </li>
+                        <li>2011: Conference, Int. School on Quantum and Nano Computing Systems, Agra, India. </li>
                     </ul>
                 </div>
             </section>
 
-            <!-- [> Contact <] -->
-            <!-- <section id="contact" class="four"> -->
-            <!-- <div class="container"> -->
-            <!--  -->
-            <!-- <header> -->
-            <!-- <h2>Contact(not functional right now)</h2> -->
-            <!-- </header> -->
-            <!--  -->
-            <!-- <p>Please send a message by filling up the form below and I will get back to you as soon as possible!</p> -->
-            <!--  -->
-            <!-- <form method="post" action="formaction.php"> -->
-            <!-- <div class="row"> -->
-            <!-- <div class="col-6 col-12-mobile"><input type="text" name="Name" placeholder="Name" /></div> -->
-            <!-- <div class="col-6 col-12-mobile"><input type="text" name="Email" placeholder="Email" /></div> -->
-            <!-- <div class="col-12"> -->
-            <!-- <textarea name="Message" placeholder="Message"></textarea> -->
-            <!-- </div> -->
-            <!-- <div class="col-12"> -->
-            <!-- <input type="submit" value="Send Message" /> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </form> -->
-            <!--  -->
-            <!-- </div> -->
-            <!-- </section> -->
-
         </div>
 
-        <!-- Footer -->
         <div id="footer">
-            <!-- Copyright -->
             <ul class="copyright">
                 <li>&copy; Hemant Katiyar. All rights reserved.</li><li>Designed using free template from : <a href="http://html5up.net">HTML5 UP</a></li>
             </ul>
 
         </div>
 
-        <!-- Scripts -->
-        <!-- Defined by me -->
-        <script> const date = new Date(document.lastModified); document.getElementById("demo").innerHTML = date; </script>
-        <!-- preset -->
+        <script> 
+            const date = new Date(document.lastModified); 
+            document.getElementById("demo").innerHTML = date.toDateString(); 
+        </script>
+        
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
@@ -376,4 +348,3 @@
 
     </body>
 </html>
-
