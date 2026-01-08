@@ -4,96 +4,170 @@
         <title>Hemant Katiyar - Quantum Engineer</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        
         <meta name="description" content="Portfolio of Hemant Katiyar, Senior Quantum Engineer at IonQ. PhD in Physics (Quantum Information) from University of Waterloo.">
         
         <link rel="stylesheet" href="assets/css/main.css" />
 
         <style>
-            .profile-card-image {
-                width: 100%;
-                border-radius: 1em;
-                border: 3px solid #fff;
-                box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59); 
-                -webkit-box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59); 
-                -moz-box-shadow: 4px 4px 7px 5px rgba(0,0,0,0.59);
+            /* 1. TYPOGRAPHY UPGRADE */
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+            
+            body, h1, h2, h3, h4, h5, h6, input, select, textarea {
+                font-family: 'Inter', sans-serif !important;
             }
-            .profile-text-header {
-                font-size: 1.6em;
+
+            /* 2. SIDEBAR MODERNIZATION */
+            #header {
+                background-color: #0f172a; /* Deep "Quantum" Blue (Slate 900) */
+                background-image: none; /* Removes old textured background */
             }
-            .profile-subtext-list {
-                font-weight: 300;
-                font-size: 0.7em;
-                line-height: 120%;
-                margin-left: 0;
-                margin-bottom: 0;
+            
+            #header .top .image img {
+                border-radius: 100%;
+                border: 3px solid rgba(255,255,255,0.2); /* Softer border */
+            }
+
+            /* 3. PUBLICATION CARDS */
+            /* Remove default bullets and styling */
+            #about ul {
                 list-style: none;
                 padding-left: 0;
             }
-            .footer-last-mod {
-                font-size: 0.45em; 
-                text-align: center;
-                list-style: none; 
-                color: teal; 
-                padding-left: 0;
-                margin-bottom: 0;
-                margin-left: 0;
+
+            /* Card styling for each paper */
+            #about ul li {
+                background: #ffffff;
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                padding: 1.5em;
+                margin-bottom: 1.5em;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+                transition: transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease;
+                border-left: 4px solid transparent; /* Hidden accent bar */
             }
-            .intro-text p {
+
+            /* Hover Effect */
+            #about ul li:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                border-left-color: #3b82f6; /* Bright Blue Accent */
+            }
+
+            /* Typography inside cards */
+            .pubtitle {
+                display: block;
+                font-size: 1.1em;
+                font-weight: 700;
+                color: #1e293b;
+                margin-bottom: 0.5em;
+                line-height: 1.3;
+            }
+
+            .pubauthor {
+                display: block;
+                font-size: 0.9em;
+                color: #64748b; /* Muted Slate */
+                margin-bottom: 0.8em;
+            }
+
+            /* Highlight your name */
+            .pubhk {
+                color: #0f172a;
+                font-weight: 700;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-decoration-color: #cbd5e1;
+            }
+
+            .publink {
+                display: inline-block;
+                font-size: 0.75em;
+                font-weight: 700;
+                color: #3b82f6;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                border: 1px solid #3b82f6;
+                padding: 4px 10px;
+                border-radius: 4px;
+                text-decoration: none;
+                transition: background 0.2s ease, color 0.2s ease;
+            }
+            
+            .publink:hover {
+                background: #3b82f6;
+                color: #ffffff !important;
+            }
+
+            /* 4. SKILLS & WORK SECTION CLEANUP */
+            .skill-category {
+                font-weight: 700;
+                color: #334155;
+                background: #f1f5f9;
+                padding: 2px 6px;
+                border-radius: 4px;
+                margin-right: 8px;
                 font-size: 0.9em;
             }
-            /* Make publications easier to scan */
-            .publink {
-                font-weight: bold;
-                color: #555;
+
+            /* 5. PROFILE IMAGE IN CONTENT */
+            .profile-card-image {
+                width: 100%;
+                border-radius: 12px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2); 
+            }
+            
+            .profile-text-header {
+                font-size: 2em;
+                font-weight: 700;
+                margin-top: 0.5em;
+                color: #fff;
+            }
+            
+            .intro-subtext {
+                 color: #cbd5e1;
+                 font-weight: 300;
+                 list-style: none;
+                 padding: 0;
+                 margin: 0;
             }
         </style>
-
-        </head>
+    </head>
 
     <body class="is-preload">
 
         <div id="header">
 
             <div class="top">
-
                 <div id="logo">
                     <span class="image avatar48"><img src="images/avatar.jpg" alt="Hemant Katiyar Portrait" /></span>
                     <h1 id="title">Hemant Katiyar</h1>
-                    <p>Quantum Engineer</p>
+                    <p style="color: #94a3b8;">Quantum Engineer</p>
                 </div>
 
                 <nav id="nav">
                     <ul>
                         <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-                        <li><a href="#about" id="about-link"><span class="icon solid fa-list">Publications</span></a></li>
-                        <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-sticky-note">Curriculum Vitae</span></a></li>
+                        <li><a href="#about" id="about-link"><span class="icon solid fa-flask">Publications</span></a></li>
+                        <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-briefcase">CV & Experience</span></a></li>
                     </ul>
                 </nav>
-
             </div>
+
             <div class="middle">
                 <ul class="implink">
                     <li><a href="/HemantKatiyarCV.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file"></i>&nbsp;&nbsp;&nbsp;Download CV (PDF)</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Google Scholar Profile</a></li>
-                    <li><a href="mailto:hemantkatiyar7@gmail.com?subject=HK@github&body=Dear Hemant,"><i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;hemantkatiyar7@gmail.com</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer"><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;Google Scholar</a></li>
+                    <li><a href="mailto:hemantkatiyar7@gmail.com?subject=Inquiry from Website"><i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;Email Me</a></li>
                 </ul>
             </div>
 
             <div class="bottom">
                 <ul class="icons">
                     <li><a href="https://twitter.com/hem_katiyar/" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="https://www.facebook.com/hemant.katiyar" target="_blank" rel="noopener noreferrer" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
                     <li><a href="https://github.com/hemantkatiyar" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">Github</span></a></li>
                     <li><a href="https://www.linkedin.com/in/hemant-katiyar/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
                 </ul>
             </div>
-            <div>
-                <ul style="margin-bottom:0;margin-left:0">
-                    <li class="footer-last-mod">Website Last Modified @ <span id="demo"></span></li>
-                </ul>  
-            </div>
-
         </div>
 
         <div id="main">
@@ -105,132 +179,65 @@
                             <div class="col-4 col-12-mobile">
                                 <div style="position:relative">
                                     <img alt="Hemant Katiyar" src="images/hk2.jpeg" class="profile-card-image">
-                                    <div class="text-block">
-                                        <h2 class="profile-text-header">&nbsp;Hemant Katiyar</h2>
-                                        <ul class="profile-subtext-list">
-                                            <li>Senior Engineer, IonQ</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-8 col-12-mobile">
-                                <h2 class="alt">Hello!</h2>
+                            <div class="col-8 col-12-mobile" style="text-align: left; padding-left: 2em;">
+                                <h2 class="alt" style="font-weight: 800; font-size: 2.5em; margin-bottom: 0.5em;">Hello!</h2>
                                 
-                                <p> I am currently working for <a href="https://www.ionq.com" target="_blank" rel="noopener noreferrer">IonQ</a> as a Senior Engineer.</p>
+                                <p style="font-size: 1.1em; line-height: 1.8;"> 
+                                    I am currently a <strong>Senior Engineer</strong> at <a href="https://www.ionq.com" target="_blank" rel="noopener noreferrer" style="color: #60a5fa; font-weight:bold;">IonQ</a>.
+                                </p>
 
-                                <p style="font-size:.9em;">I received my PhD in Physics-Quantum Information from the <a href="https://uwaterloo.ca/institute-for-quantum-computing/" target="_blank" rel="noopener noreferrer">Institute for Quantum Computing</a>, University of Waterloo in October 2019 under the supervision of <a href="https://uwaterloo.ca/physics-astronomy/people-profiles/raymond-laflamme" target="_blank" rel="noopener noreferrer">Prof. Raymond Laflamme.</a> </p>
+                                <p style="font-size: 1em; opacity: 0.9;">
+                                    I received my PhD in Physics (Quantum Information) from the <a href="https://uwaterloo.ca/institute-for-quantum-computing/" target="_blank" rel="noopener noreferrer">Institute for Quantum Computing</a>, University of Waterloo, specializing in control techniques for spin-based quantum computation.
+                                </p>
+
+                                <div style="margin-top: 2em;">
+                                    <a href="#about" class="button scrolly">View Publications</a>
+                                    <a href="/HemantKatiyarCV.pdf" target="_blank" class="button alt">Download CV</a>
+                                </div>
                             </div>
                         </div>
                     </header>
-
-                    <div style="clear:both;"> 
-                        <footer> 
-                            <div class="row">
-                                <div class="col-4 col-12-mobile">
-                                    <a href="/HemantKatiyarCV.pdf" target="_blank" rel="noopener noreferrer" class="button" style="font-size:.7em;font-weight:bold">Curriculum Vitae (PDF)</a>
-                                </div>
-                                <div class="col-4 col-12-mobile">
-                                    <a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" class="button " style="font-size:.7em;font-weight:bold">Google Scholar Profile</a>
-                                </div>
-                                <div class="col-4 col-12-mobile">
-                                    <a href="mailto:hemantkatiyar7@gmail.com?subject=HK@github&body=Dear Hemant," class="button" style="font-size:.7em;font-weight:bold">Contact Me (email)</a>
-                                </div>
-                            </div>
-                        </footer>
-                    </div>
-
                 </div>
             </section>
 
             <section id="about" class="two">
                 <div class="container">
                     <header>
-                        <h2>Publications</h2> 
-                        <a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Google Scholar Profile</a>
+                        <h2>Selected Publications</h2> 
+                        <p>A selection of my work in Quantum Control, NMR, and Error Correction.</p>
                     </header>
                     
                     <ul>
-                        <li><span class="pubtitle">Experimental activation of strong local passive states with quantum information.</span>
-                            <span class="pubauthor">Nayeli A. Rodríguez-Briones, <span class="pubhk">Hemant Katiyar</span>, Eduardo Martín-Martínez, Raymond Laflamme. </span>
-                            <a href="https://arxiv.org/abs/2203.16269" target="_blank" rel="noopener noreferrer" class="publink"> arXiv:2203.16269 (2022) </a> 
+                        <li>
+                            <span class="pubtitle">Experimental activation of strong local passive states with quantum information</span>
+                            <span class="pubauthor">Nayeli A. Rodríguez-Briones, <span class="pubhk">Hemant Katiyar</span>, Eduardo Martín-Martínez, Raymond Laflamme</span>
+                            <a href="https://arxiv.org/abs/2203.16269" target="_blank" rel="noopener noreferrer" class="publink">arXiv (2022)</a> 
                         </li>
                         <li>
-                            <span class="pubtitle">Fast Simulation of Magnetic Field Gradients for Optimization of Pulse Sequences. </span>
-                            <span class="pubauthor">John P. S. Peterson, <span class="pubhk"> Hemant Katiyar</span>, Raymond Laflamme. </span>
-                            <a href="https://arxiv.org/abs/2006.10133" target="_blank" rel="noopener noreferrer" class="publink"> arXiv 2006.10133 (2020) </a>
+                            <span class="pubtitle">Enhancing quantum control by bootstrapping a quantum processor of 12 qubits</span>
+                            <span class="pubauthor">Dawei Lu, Keren Li, Jun Li, <span class="pubhk">Hemant Katiyar</span>, et al.</span>
+                            <a href="https://www.nature.com/articles/s41534-017-0045-z" target="_blank" rel="noopener noreferrer" class="publink">npj Quantum Info (2017)</a> 
                         </li>
                         <li>
-                            <span class="pubtitle">Exploration of an augmented set of Leggett-Garg inequalities using a noninvasive continuous-in-time velocity measurement.</span>
-                            <span class="pubauthor">Shayan-Shawn Majidy,<span class="pubhk"> Hemant Katiyar</span>, Galit Anikeeva, Jonathan Halliwell, Raymond Laflamme.</span> 
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.100.042325" target="_blank" rel="noopener noreferrer" class="publink" >Phys Rev A 100 042325 (2019)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Gradient-based closed-loop quantum optimal control in a solid-state two-qubit system. </span>
-                            <span class="pubauthor">Guanru Feng, Franklin H Cho, <span class="pubhk"> Hemant Katiyar</span>, Jun Li, Dawei Lu, Jonathan Baugh, Raymond Laflamme.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.052341" target="_blank" rel="noopener noreferrer" class="publink" >Phys Rev A 98 052341 (2018)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Enhancing quantum control by bootstrapping a quantum processor of 12 qubits.</span>
-                            <span class="pubauthor">Dawei Lu, Keren Li, Jun Li, <span class="pubhk"> Hemant Katiyar</span>, Annie Jihyun Park, Guanru Feng, Tao Xin, Hang Li, Guilu Long, Aharon Brodutch, Jonathan Baugh, Bei Zeng, Raymond Laflamme. </span>
-                            <a href="https://www.nature.com/articles/s41534-017-0045-z" target="_blank" rel="noopener noreferrer" class="publink" >npj Quantum Information 3, 45 (2017) </a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Experimentally superposing two pure states with partial prior knowledge. </span>
-                            <span class="pubauthor">K Li, G Long, <span class="pubhk"> Hemant Katiyar</span>, T Xin, G Feng, D Lu, R Laflamme.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.95.022334" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. A 95, 022334 (2017)</a> 
+                            <span class="pubtitle">Gradient-based closed-loop quantum optimal control in a solid-state two-qubit system</span>
+                            <span class="pubauthor">Guanru Feng, Franklin H Cho, <span class="pubhk">Hemant Katiyar</span>, et al.</span>
+                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.052341" target="_blank" rel="noopener noreferrer" class="publink">Phys Rev A (2018)</a> 
                         </li>
                         <li>
                             <span class="pubtitle">Experimental violation of the Leggett-Garg inequality in a 3-level system.</span>
                             <span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, A Brodutch, D Lu, R Laflamme.</span>
-                            <a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa5c51/meta" target="_blank" rel="noopener noreferrer" class="publink" >New J Phys. 19 023033 (2017)</a> 
+                            <a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa5c51/meta" target="_blank" rel="noopener noreferrer" class="publink" >New J Phys. (2017)</a> 
                         </li>
-                        <li>
-                            <span class="pubtitle">NMR investigation of contextuality in a quantum harmonic oscillator via pseudospin mapping.</span> 
-                            <span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, CSS Kumar, TS Mahesh.</span> 
-                            <a href="https://iopscience.iop.org/article/10.1209/0295-5075/113/20003"  target="_blank" rel="noopener noreferrer" class="publink">EPL 113 (2), 20003 (2016) </a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">NMR quantum information processing.</span>
-                            <span class="pubauthor">Dawei Lu, Aharon Brodutch, Annie Jihyun Park, <span class="pubhk"> Hemant Katiyar</span>, Tomas Jochym O’Connor, Raymond Laflamme.</span>
-                            <a href="https://link.springer.com/chapter/10.1007/978-1-4939-3658-8_7" target="_blank" rel="noopener noreferrer" class="publink" >Electron Spin Resonance (ESR) Based Quantum Computing, Springer (2016)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Ancilla assisted measurements on quantum ensembles: General protocols and applications.</span> 
-                            <span class="pubauthor">TS Mahesh, A Shukla, SS Hegde, CS Kumar,<span class="pubhk"> Hemant Katiyar</span>, S Joshi, KR Rao.</span>
-                            <a href="https://arxiv.org/abs/1509.04506" target="_blank" rel="noopener noreferrer" class="publink" >arXiv 1509.04506 (2015) </a>
-                        </li>
-                        <li>
-                            <span class="pubtitle">Freezing a quantum magnet by repeated quantum interference: An experimental realization. </span>
-                            <span class="pubauthor">Swathi Hegde, <span class="pubhk"> Hemant Katiyar</span>, Arnab Das and T S Mahesh.</span>
-                            <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.90.174407" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. B 90, 174407 (2014)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Estimating Franck-Condon factors using an NMR quantum processor. </span>
-                            <span class="pubauthor">S Joshi, A Shukla, <span class="pubhk"> Hemant Katiyar</span>, A Hazra, TS Mahesh.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.90.022303" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. A 90, 022303 (2014)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Violation of Entropic Leggett-Garg Inequality in Nuclear Spin Ensembles.</span>
-                            <span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, Abhishek Shukla, Rama Koteswara Rao,and T S Mahesh.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.052102" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. A 87, 052102  (2013)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Multipartite quantum correlations reveal frustration in a quantum Ising spin system. </span>
-                            <span class="pubauthor">KRK Rao, <span class="pubhk"> Hemant Katiyar</span>, TS Mahesh, A Sen, U Sen, A Kumar.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.88.022312" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. A 88, 022312  (2013)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Inversion of moments to retrieve joint probabilities in quantum sequential measurements. </span>
-                            <span class="pubauthor">HS Karthik, <span class="pubhk"> Hemant Katiyar</span>, A Shukla, TS Mahesh, ARU Devi, AK Rajagopal.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.052118" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. A 87, 052118  (2013)</a> 
-                        </li>
-                        <li>
-                            <span class="pubtitle">Evolution of Quantum Discord and its Stability in Two-Qubit NMR Systems.</span>
-                            <span class="pubauthor"><span class="pubhk"> Hemant Katiyar</span>, Soumya Singha Roy, T S Mahesh and Apoorva Patel.</span>
-                            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.86.012309" target="_blank" rel="noopener noreferrer" class="publink" >Phys. Rev. A 86, 012309 (2012)</a> 
+                         <li>
+                            <span class="pubtitle">Fast Simulation of Magnetic Field Gradients for Optimization of Pulse Sequences. </span>
+                            <span class="pubauthor">John P. S. Peterson, <span class="pubhk"> Hemant Katiyar</span>, Raymond Laflamme. </span>
+                            <a href="https://arxiv.org/abs/2006.10133" target="_blank" rel="noopener noreferrer" class="publink"> arXiv (2020) </a>
                         </li>
                     </ul>
+                    <a href="https://scholar.google.com/citations?user=atjM8YIAAAAJ&hl=en&authuser=1" target="_blank" class="button small">View All on Google Scholar</a>
 
                 </div>                                      
             </section>
@@ -238,89 +245,48 @@
             <section id="portfolio" class="three">
                 <div class="container">
                     <header>
-                        <h2>Curriculum Vitae & Resume</h2>
-                        <a href="/HemantKatiyarCV.pdf" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Download CV PDF version</a>
-                        <a href="/resume_hk.pdf" target="_blank" rel="noopener noreferrer" style="font-size:.6em;font-weight:bold">Download resume PDF version</a>
+                        <h2>Experience & Skills</h2>
                     </header>
-                    <h3>Work</h3>
-                    <ul>
-                        <li>
-                            <span class="pubtitle">IonQ, Canada (Jan 2023 - Present) </span>
-                            <span class="pubauthor">Senior Engineer</span>
-                        </li>
-                        <li>
-                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo (Aug 2022 – Dec 2022) </span>
-                            <span class="pubauthor">Post-Doctoral Fellow (Mitacs Accelerate) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. Christopher Wilson</span>
-                        </li>
-                        <li>
-                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo (Oct 2019 – Aug 2022) </span>
-                            <span class="pubauthor">Post-Doctoral Fellow &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. Raymond Laflamme</span>
-                        </li>
-                    </ul>
 
-                    <h3>Education</h3>
-                    <ul>
-                        <li>
-                            <span class="pubtitle">Institute for Quantum Computing, University of Waterloo (2014–2019) </span>
-                            <span class="pubauthor">PhD Physics (Quantum Information) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. Raymond Laflamme </span>
-                            <span class="publink">Thesis title: Control techniques in spin based quantum computation.</span>
-                        </li> 
-                        <li>
-                            <span class="pubtitle">Indian Institute of Science Education and Research Pune, India (2012–2014) </span>
-                            <span class="pubauthor">Research Assistant </span>
-                        </li> 
-                        <li>
-                            <span class="pubtitle">Indian Institute of Science Education and Research Pune, India (2007–2012) </span>
-                            <span class="pubauthor">BS-MS Dual Degree (Major in Physics) &nbsp;&nbsp;| &nbsp;&nbsp; Supervisor: Prof. T. S. Mahesh </span>
-                            <span class="publink">Thesis title: Estimation of Quantum Correlations in Nuclear Spin Ensembles.</span>
-                        </li>
-                    </ul>
+                    <div style="text-align: left;">
+                        <h3><i class="icon solid fa-briefcase"></i> Work History</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="background: #fff; padding: 1em; border-left: 4px solid #0f172a; margin-bottom: 1em; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                <strong style="font-size: 1.1em;">Senior Engineer @ IonQ</strong>
+                                <span style="float: right; color: #888; font-size: 0.9em;">Jan 2023 - Present</span>
+                                <br><span style="color: #555;">Canada</span>
+                            </li>
+                            <li style="background: #fff; padding: 1em; border-left: 4px solid #cbd5e1; margin-bottom: 1em; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                <strong style="font-size: 1.1em;">Post-Doctoral Fellow (Mitacs) @ IQC</strong>
+                                <span style="float: right; color: #888; font-size: 0.9em;">Aug 2022 – Dec 2022</span>
+                                <br><span style="color: #555;">Supervisor: Prof. Christopher Wilson</span>
+                            </li>
+                            <li style="background: #fff; padding: 1em; border-left: 4px solid #cbd5e1; margin-bottom: 1em; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                                <strong style="font-size: 1.1em;">Post-Doctoral Fellow @ IQC</strong>
+                                <span style="float: right; color: #888; font-size: 0.9em;">Oct 2019 – Aug 2022</span>
+                                <br><span style="color: #555;">Supervisor: Prof. Raymond Laflamme</span>
+                            </li>
+                        </ul>
+
+                        <br>
+
+                        <h3><i class="icon solid fa-code"></i> Technical Skills</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.8em;">
+                                <span class="skill-category">Languages</span> Python, MATLAB, Mathematica
+                            </li>
+                            <li style="margin-bottom: 0.8em;">
+                                <span class="skill-category">Web</span> HTML, CSS, LaTeX
+                            </li>
+                            <li style="margin-bottom: 0.8em;">
+                                <span class="skill-category">OS & Tools</span> Linux, Windows, macOS, Git, GitHub
+                            </li>
+                            <li style="margin-bottom: 0.8em;">
+                                <span class="skill-category">Lab Software</span> Bruker TopSpin, Photoshop, Illustrator
+                            </li>
+                        </ul>
+                    </div>
                     
-                    <h3>Scholarships / Awards</h3>
-                    <ul>
-                        <li>Marie Curie Graduate Student Award (Spring 2014 - Winter 2018)</li>
-                        <li>International Doctoral Student Award (Spring 2014 - Winter 2018)</li>
-                        <li>Graduate Research Award (Spring 2014 - Spring 2019)</li>
-                        <li>Science Graduate Experience Award (5 Terms between 2014-2017)</li>
-                        <li>Innovation in Science Pursuit for Inspired Research (INSPIRE) scholarship (2007-2012)</li>
-                    </ul>
-                    
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li><span style="font-weight:bold">Programming Languages:</span> Python, MATLAB, Mathematica</li>
-                        <li><span style="font-weight:bold">Markup Languages:</span> HTML, CSS, LaTeX</li>
-                        <li><span style="font-weight:bold">Operating Systems:</span> Linux, Windows, macOS</li>
-                        <li><span style="font-weight:bold">Tools:</span> Git, GitHub</li>
-                        <li><span style="font-weight:bold">Other Software:</span> Bruker TopSpin, Photoshop, Dreamweaver, Illustrator</li>
-                    </ul>
-                    
-                    <h3>Teaching Experience</h3>
-                    <ul>
-                        <li>PHYS468 - Introduction to the Implementation of Quantum Information Processing (2020, 2021) <br><span style="font-style:italic">Taught students how to use an NMR quantum computer and helped them perform their first quantum experiment (60 Hrs).</span></li>
-                        <li>PHYS242 - Electricity and Magnetism 1 (2021) <br><span style="font-style:italic">Taught weeks 5 and 6.</span></li>
-                        <li>QIC750 - Implementation of Quantum Information Processing (2019) <br><span style="font-style:italic">Teaching assistant; gave NMR lab introduction to students.</span></li>
-                        <li>PHYS234 - Quantum Physics 1 (2016, 2017) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
-                        <li>PHYS280 - Introduction to Biophysics (2017) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
-                        <li>PHYS121 - Mechanics (2014, 2015) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
-                        <li>PHYS364 - Mathematical Physics 1 (2015) <br><span style="font-style:italic">Full time teaching assistant.</span></li>
-                    </ul>
-                    
-                    <h3>Scientific Outreach</h3>
-                    <ul>
-                        <li>Undergraduate School on Experimental Quantum Information Processing (2015-2019)<br><span style="font-style:italic">Taught all aspects of performing NMR experiments, helped students familiarize with experimental setup, and engaged them in the physics behind the experiments.</span></li>
-                    </ul>
-                    
-                    <h3>Talks, Posters, Conferences, and Schools</h3>
-                    <ul>
-                        <li>2017: School & Conference, Machine Learning, University of KwaZulu-Natal, South Africa. </li>
-                        <li>2016: School, Machine Learning, Perimeter Institute, Canada. </li>
-                        <li>2015: Poster, University of Guelph, Canada. </li>
-                        <li>2013: Poster & Conference, NMR Society meeting at IIT Bombay. </li>
-                        <li>2012: Poster & Conference, Int. Conf. on Quantum Information and Quantum Computing at IISc Bangalore. </li>
-                        <li>2012: Mini Winter School on Quantum Information and Computation. </li>
-                        <li>2012: Talk, "On Quantum Discord", CQIQC Summer School, IISc Bangalore. </li>
-                        <li>2011: Conference, Int. School on Quantum and Nano Computing Systems, Agra, India. </li>
-                    </ul>
                 </div>
             </section>
 
@@ -328,14 +294,13 @@
 
         <div id="footer">
             <ul class="copyright">
-                <li>&copy; Hemant Katiyar. All rights reserved.</li><li>Designed using free template from : <a href="http://html5up.net">HTML5 UP</a></li>
+                <li>&copy; Hemant Katiyar. All rights reserved.</li><li>Design: HTML5 UP (Modernized)</li>
             </ul>
-
         </div>
 
         <script> 
             const date = new Date(document.lastModified); 
-            document.getElementById("demo").innerHTML = date.toDateString(); 
+            document.getElementById("demo")?.innerHTML = date.toDateString(); 
         </script>
         
         <script src="assets/js/jquery.min.js"></script>
